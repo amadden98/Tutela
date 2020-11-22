@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Amanda Madden">
+        <meta name="description" content="Designed to help Duke students navigate and destigmatize mental health resources on campus.">
+        <meta name="keywords" content="Duke, Mental Health">
+        <title>Tutela</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Roboto&display=swap">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <style>
+            /* variables */
+            :root {
+                --sidebar: #5f8256;
+                --headers: #1b3b13;
+                --links: #331d21;
+            }
+            /* Style page content */
+            body {
+                margin-left: 248px;
+                /* Same as the width of the sidebar + 24*/
+                padding: 24px 10px;
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            h1 {
+                font-family: 'Domine';
+                color: var(--headers);
+                margin-bottom: 24px;
+            }
+
+            h2 {
+                font-family: 'Domine';
+                color: var(--headers);
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                font-family: 'Domine';
+                color: var(--headers);
+                margin-bottom: 8px;
+            }
+            p {
+                margin-top: 0px;
+                max-width: 600px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+
+            a:hover { color: var(--links); }
+
+            th, td {
+                border-bottom: 1px solid #ddd;
+            }
+
+            /* side navigation */
+            .sidenav {
+                height: 100%;
+                /* Full-height: remove this if you want "auto" height */
+                width: 224px;
+                /* Set the width of the sidebar */
+                position: fixed;
+                /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1;
+                /* Stay on top */
+                top: 0;
+                /* Stay at the top */
+                left: 0;
+                background-color: var(--sidebar);
+                /* Sidebar color */
+                overflow-x: hidden;
+                /* Disable horizontal scroll */
+
+                color: #ffffff;
+                font-family: 'Roboto';
+                font-size: 16px;
+            }
+
+            .sidenav h1 {
+                font-family: 'Domine';
+                padding: 0px 8px 8px 0px;
+                margin-top: 36px;
+                color: #ffffff;
+            }
+
+            .sidenav a {
+                font-weight: normal;
+                padding: 16px 8px 8px 16px;
+                text-decoration: none;
+                display: block;
+                color: #ffffff;
+            }
+
+            .sidenav a:hover {
+                font-weight: bold;
+                color: var(--links);
+            }
+
+            /* Rules for sizing the icon. */
+            .material-icons {
+                vertical-align: middle;
+            }
+            .material-icons.md-18 { font-size: 18px; }
+            .material-icons.md-24 { font-size: 24px; }
+            .material-icons.md-36 { font-size: 36px; }
+            .material-icons.md-48 { font-size: 48px; }
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="sidenav">
+            <h1><a href="home.html">Tutela</a></h1>
+            <a href="find_care.html"><i class="material-icons md-18">person_search</i> Find Care</a>
+            <a href="home.html"><i class="material-icons md-18">forum</i> Student Testimonials</a>
+            <a href="home.html"><i class="material-icons md-18">info</i> Onboarding Information</a>
+            <a href="chatbot.html"><i class="material-icons md-18">chat_bubble</i> Ask Questions</a>
+            <a href="about_us.html"><i class="material-icons md-18">groups</i> About Us</a>
+        </div>
+
+        <div class="title">
+            <h1>Find Care Survey</h1>
+        </div>
+      
+        <div class="text">
+            <h2>Please complete this survey, so we can best tailor our suggestions!</h2>
+            <p>
+                
+            </p>
+        </div>
+
+=======
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+    <script>
+        var myLandbot = new LandbotLivechat({index: 'https://chats.landbot.io/v2/H-740792-LH113TP71UW6K1LP/index.html',});
+    </script>
+    <script>
+        // Show a proactive message on landbot load
+        myLandbot.on('landbot-load', function() {
+            myLandbot.sendProactive({
+                "message": "Hey it's Nugget, I'm here to answer any questions you have about Tutela and can recommend some mental health tips!",
+                "author": "Nugget the Chatbot",
+                "avatar": "https://storage.googleapis.com/media.helloumi.com/155883/channels/FPZK6QL2B5O82UYY4HQAJ2FWR45P8HR9.jpg",
+                "extra": {
+                    "hide_textbox": true
+                }
+            });
+        });
+    </script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- head - Googlefonts link -->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+
+  <!-- --- Demographics/intro questions---------------------------- -->
+  <fieldset>
+    <legend>Demographics</legend>
+    <div>
+      <label for="msg"></label>
+      <p> What is your gender identity?</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">What is your age?</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+      
+      
+  </fieldset>
+   
+      <!-- ------------------Checkboxes-------------------------------- -->
+   <legend>Demographics</legend>
+  <fieldset>
+    <label for="Gender">Would you prefer a one on one basis, or a group setting?</label>
+    <p>
+      <input type="checkbox" name="One" value="One"> One on one<br>
+      <input type="checkbox" name="Group" value="Group"> Group Setting <br>
+      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Latino or Hispanic<br>
+      <input type="checkbox" name="Asian" value="Asian" checked> Asian<br>
+      <input type="checkbox" name="Native_American" value="Native_American" checked> Native American<br>
+      <input type="checkbox" name="Native_Hawaiin" value="Native_Hawaiin" checked> Native Hawaiin<br>
+        <input type="checkbox" name="Other" value="Other" checked> Other <br>
+        <input type="checkbox" name="Unknown" value="Unknown" checked> Unknown<br>
+        <input type="checkbox" name="Prefer" value="Prefer" checked> Prefer not to say<br>
+      
+         
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <label for="Gender">Please specify the options below you'd be open to explore</label>
+    <p>
+      <input type="checkbox" name="On campus" value="On campus"> On campus Duke resource<br>
+      <input type="checkbox" name="Group" value="Group"> Off campus Duke resource<br>
+      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Off campus Duke referral resource<br>
+      <input type="checkbox" name="Asian" value="Asian" checked> Off campus non Duke affiliated resource<br>
+      <input type="checkbox" name="Native_American" value="Native_American" checked> Virtual care<br> 
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <label for="Gender">How did you find this website?</label>
+    <p>
+      <input type="checkbox" name="One" value="One"> Friends/Family<br>
+      <input type="checkbox" name="Group" value="Group"> Duke social media<br>
+      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Suggested by a mental health provider<br>
+      <input type="checkbox" name="Asian" value="Asian" checked> Online research<br> 
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <label for="Gender">Did you purposefully seek out online health resources?</label>
+    <p>
+      <input type="checkbox" name="One" value="One"> Yes <br>
+      <input type="checkbox" name="Group" value="Group"> No <br>
+    </p>
+  </fieldset>
+  <div align="right"> <button> Next </button> </div>
+
+  <div>
+      <a href="results_page.html"><button class="btn">View your results</button></a>
+  </div>
+
+</form>
+  </div>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+        
+
+<!-- >>>>>>> e21d92cf5778a410d2014ae12c5a272162375633 -->
+    </body>
+</html>
