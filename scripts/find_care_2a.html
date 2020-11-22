@@ -31,13 +31,13 @@
                 color: #000000;
             }
 
-            h1, legend {
+            h1 {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 24px;
             }
 
-            h2, label {
+            h2 {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 8px;
@@ -48,9 +48,27 @@
                 color: var(--headers);
                 margin-bottom: 8px;
             }
+
             p {
                 margin-top: 0px;
                 max-width: 600px;
+            }
+
+            form {
+                max-width: 600px;
+            }
+            
+            legend {
+                font-family: 'Domine';
+                color: var(--headers);
+                margin-bottom: 8px;
+                font-size: 24px;
+            }
+
+            label {
+                font-family: 'Roboto';
+                font-size: 16px;
+                margin-bottom: 8px;
             }
 
             a {
@@ -108,6 +126,8 @@
                 color: var(--links);
             }
 
+            .question { padding-bottom: 8px;}
+
             /* Rules for sizing the icon. */
             .material-icons {
                 vertical-align: middle;
@@ -150,50 +170,49 @@
             <h1>Find Care Survey</h1>
         </div>
 
-<div id="outside">
-<form id="survey-form" action="find_care_2b.html" method="post">
-    <!-- ------------------Checkboxes-------------------------------- -->
-    <legend>Preferences</legend>
-    <fieldset>
-    <label for="Gender">Would you prefer a one on one basis, or a group setting?</label>
-    <p>
-      <input type="checkbox" name="One" value="One"> One on one<br>
-      <input type="checkbox" name="Group" value="Group"> Group Setting <br>      
-    </p>
-  </fieldset>
-  
-  <fieldset>
-    <label for="Gender">Please specify the options below you'd be open to explore:</label>
-    <p>
-      <input type="checkbox" name="On campus" value="On campus"> On campus Duke resource<br>
-      <input type="checkbox" name="Group" value="Group"> Off campus Duke resource<br>
-      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Off campus Duke referral resource<br>
-      <input type="checkbox" name="Asian" value="Asian"> Off campus non Duke affiliated resource<br>
-      <input type="checkbox" name="Native_American" value="Native_American"> Virtual care<br> 
-    </p>
-  </fieldset>
-  
-  <fieldset>
-    <label for="Gender">How did you find this website?</label>
-    <p>
-      <input type="checkbox" name="One" value="One"> Friends/Family<br>
-      <input type="checkbox" name="Group" value="Group"> Duke social media<br>
-      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Suggested by a mental health provider<br>
-      <input type="checkbox" name="Asian" value="Asian"> Online research<br> 
+        <div id="outside">
+            <form id="survey-form" action="find_care_2b.html" method="post">
+                <!-- ------------------Checkboxes-------------------------------- -->
+                <legend>Preferences</legend>  
+                <div class="question">                  
+                    <label for="Gender">Would you prefer a one on one basis, or a group setting?</label>
+                    <p>
+                    <input type="checkbox" name="One" value="One"> One on one<br>
+                    <input type="checkbox" name="Group" value="Group"> Group Setting <br>      
+                    </p>
+                </div>
+            
+                <div class="question">
+                    <label for="Gender">Please specify the options below you'd be open to explore:</label>
+                    <p>
+                        <input type="checkbox" name="On campus" value="On campus"> On campus Duke resource<br>
+                        <input type="checkbox" name="Group" value="Group"> Off campus Duke resource<br>
+                        <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Off campus Duke referral resource<br>
+                        <input type="checkbox" name="Asian" value="Asian"> Off campus non Duke affiliated resource<br>
+                        <input type="checkbox" name="Native_American" value="Native_American"> Virtual care<br> 
+                    </p>
+                </div>
+            
+                <div class="question">
+                <label for="Gender">How did you find this website?</label>
+                    <p>
+                        <input type="checkbox" name="One" value="One"> Friends/Family<br>
+                        <input type="checkbox" name="Group" value="Group"> Duke social media<br>
+                        <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Suggested by a mental health provider<br>
+                        <input type="checkbox" name="Asian" value="Asian"> Online research<br> 
+                    </p>
+                </div>
+            
+                <div class="question">
+                    <label for="Gender">Did you purposefully seek out online health resources?</label>
+                    <p>
+                        <input type="checkbox" name="One" value="One"> Yes <br>
+                        <input type="checkbox" name="Group" value="Group"> No <br>
+                    </p>
+                </div>
+            <div align="right"> <button> Next: Previous Experiences</button> </div>
 
-    </p>
-  </fieldset>
-  
-  <fieldset>
-    <label for="Gender">Did you purposefully seek out online health resources?</label>
-    <p>
-      <input type="checkbox" name="One" value="One"> Yes <br>
-      <input type="checkbox" name="Group" value="Group"> No <br>
-    </p>
-  </fieldset>
-  <div align="right"> <button> Next: Previous Experiences</button> </div>
-
-</form>
-  </div>
+            </form>
+        </div>
     </body>
 </html>
