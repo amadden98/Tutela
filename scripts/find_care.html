@@ -31,13 +31,13 @@
                 color: #000000;
             }
 
-            h1 {
+            h1, legend {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 24px;
             }
 
-            h2 {
+            h2, label {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 8px;
@@ -143,36 +143,14 @@
             </p>
         </div>
 
-=======
-    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-    <script>
-        var myLandbot = new LandbotLivechat({index: 'https://chats.landbot.io/v2/H-740792-LH113TP71UW6K1LP/index.html',});
-    </script>
-    <script>
-        // Show a proactive message on landbot load
-        myLandbot.on('landbot-load', function() {
-            myLandbot.sendProactive({
-                "message": "Hey it's Nugget, I'm here to answer any questions you have about Tutela and can recommend some mental health tips!",
-                "author": "Nugget the Chatbot",
-                "avatar": "https://storage.googleapis.com/media.helloumi.com/155883/channels/FPZK6QL2B5O82UYY4HQAJ2FWR45P8HR9.jpg",
-                "extra": {
-                    "hide_textbox": true
-                }
-            });
-        });
-    </script>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<!-- head - Googlefonts link -->
-
 <div id="outside">
-<form id="survey-form" action="results_page.html" method="post">
+<form id="survey-form" action="find_care_2a.html" method="post">
 
   <!-- --- Demographics/intro questions---------------------------- -->
   <fieldset>
     <legend>Demographics</legend>
     <div>
-      <label for="msg"></label>
-      <p> What is your gender identity?</p>
+      <label for="msg">What is your gender identity?</label><br>
       <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
     <div>
       <label for="msg">What is your age?</label><br>
@@ -185,33 +163,20 @@
   <fieldset>
     <label for="Gender">Please specify your ethnicity</label>
     <p>
-      <input type="checkbox" name="Caucasian" value="Caucasian"> Caucasian<br>
-      <input type="checkbox" name="African_American" value="African_American"> African-American <br>
-      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Latino or Hispanic<br>
-      <input type="checkbox" name="Asian" value="Asian" checked> Asian<br>
-      <input type="checkbox" name="Native_American" value="Native_American" checked> Native American<br>
-      <input type="checkbox" name="Native_Hawaiin" value="Native_Hawaiin" checked> Native Hawaiin<br>
-        <input type="checkbox" name="Other" value="Other" checked> Other <br>
-        <input type="checkbox" name="Unknown" value="Unknown" checked> Unknown<br>
-        <input type="checkbox" name="Prefer" value="Prefer" checked> Prefer not to say<br>
-      
-         
+        <input type="checkbox" name="Caucasian" value="Caucasian"> Caucasian<br>
+        <input type="checkbox" name="African_American" value="African_American"> African-American <br>
+        <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Latino or Hispanic<br>
+        <input type="checkbox" name="Asian" value="Asian"> Asian<br>
+        <input type="checkbox" name="Native_American" value="Native_American"> Native American<br>
+        <input type="checkbox" name="Native_Hawaiin" value="Native_Hawaiin"> Native Hawaiin<br>
+        <input type="checkbox" name="Other" value="Other"> Other <br>
+        <input type="checkbox" name="Unknown" value="Unknown"> Unknown<br>
+        <input type="checkbox" name="Prefer" value="Prefer"> Prefer not to say<br>
     </p>
   </fieldset>
-  <div align="right"> <button> Next </button> </div>
-
-  <div id="submitbutton">
-    <a href="results_page.html"><button class="btn">View your results</button></a>
-  </div>
-
- 
+  <div align="right"> <button> Next </button> </div> 
 
 </form>
   </div>
-
-<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
-        
-
-<!-- >>>>>>> e21d92cf5778a410d2014ae12c5a272162375633 -->
     </body>
 </html>
