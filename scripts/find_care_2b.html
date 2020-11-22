@@ -31,13 +31,13 @@
                 color: #000000;
             }
 
-            h1, legend {
+            h1 {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 24px;
             }
 
-            h2, label {
+            h2 {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 8px;
@@ -143,50 +143,98 @@
             </p>
         </div>
 
-<div id="outside">
-<form id="survey-form" action="find_care_2b.html" method="post">
-    <!-- ------------------Checkboxes-------------------------------- -->
-    <legend>Preferences</legend>
-    <fieldset>
-    <label for="Gender">Would you prefer a one on one basis, or a group setting?</label>
-    <p>
-      <input type="checkbox" name="One" value="One"> One on one<br>
-      <input type="checkbox" name="Group" value="Group"> Group Setting <br>      
-    </p>
-  </fieldset>
-  
-  <fieldset>
-    <label for="Gender">Please specify the options below you'd be open to explore:</label>
-    <p>
-      <input type="checkbox" name="On campus" value="On campus"> On campus Duke resource<br>
-      <input type="checkbox" name="Group" value="Group"> Off campus Duke resource<br>
-      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Off campus Duke referral resource<br>
-      <input type="checkbox" name="Asian" value="Asian"> Off campus non Duke affiliated resource<br>
-      <input type="checkbox" name="Native_American" value="Native_American"> Virtual care<br> 
-    </p>
-  </fieldset>
-  
-  <fieldset>
-    <label for="Gender">How did you find this website?</label>
-    <p>
-      <input type="checkbox" name="One" value="One"> Friends/Family<br>
-      <input type="checkbox" name="Group" value="Group"> Duke social media<br>
-      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Suggested by a mental health provider<br>
-      <input type="checkbox" name="Asian" value="Asian"> Online research<br> 
 
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+    <script>
+        var myLandbot = new LandbotLivechat({index: 'https://chats.landbot.io/v2/H-740792-LH113TP71UW6K1LP/index.html',});
+    </script>
+    <script>
+        // Show a proactive message on landbot load
+        myLandbot.on('landbot-load', function() {
+            myLandbot.sendProactive({
+                "message": "Hey it's Nugget, I'm here to answer any questions you have about Tutela and can recommend some mental health tips!",
+                "author": "Nugget the Chatbot",
+                "avatar": "https://storage.googleapis.com/media.helloumi.com/155883/channels/FPZK6QL2B5O82UYY4HQAJ2FWR45P8HR9.jpg",
+                "extra": {
+                    "hide_textbox": true
+                }
+            });
+        });
+    </script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- head - Googlefonts link -->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+
+ 
+   
+      <!-- ------------------Checkboxes-------------------------------- -->
+   <legend>Past experiences</legend>
+  <fieldset>
+    <label for="Gender">Please select any mental health services you have previously used and no longer use:</label>
+    <p>
+      <input type="checkbox" name="indi" value="indi"> Individual therapy<br>
+      <input type="checkbox" name="couple" value="couple"> Couples therapy<br>   
+      <input type="checkbox" name="Groupie" value="Groupie"> Group therapy<br> 
+      <input type="checkbox" name="caps" value="caps"> CAPS<br>  
+      <input type="checkbox" name="wc" value="wc"> Women's Center<br>  
+      <input type="checkbox" name="none" value="none"> None <br>  
     </p>
   </fieldset>
   
   <fieldset>
-    <label for="Gender">Did you purposefully seek out online health resources?</label>
+    <label for="Gender">Please select any mental health services you currently use:</label>
     <p>
-      <input type="checkbox" name="One" value="One"> Yes <br>
-      <input type="checkbox" name="Group" value="Group"> No <br>
+      <input type="checkbox" name="One" value="One"> Individual therapy<br>
+      <input type="checkbox" name="Group" value="Group"> Couples therapy<br>   
+      <input type="checkbox" name="Group" value="Group"> Group therapy<br> 
+      <input type="checkbox" name="Group" value="Group"> CAPS<br>  
+      <input type="checkbox" name="Group" value="Group"> Women's Center<br>  
+      <input type="checkbox" name="Group" value="Group"> None <br>   
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <label for="Gender"> Please select some of the issues you have been experiencing:?</label>
+    <p>
+      <input type="checkbox" name="One" value="One"> Anxiety<br>
+      <input type="checkbox" name="Group" value="Group"> Depression <br>
+      <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Insomniar<br>
+      <input type="checkbox" name="Asian" value="Asian" > Social phobia<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Sexual violence<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Disordered eating<br> 
+      
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <label for="Gender"> Please select the discussion topics below that might be of interest:?</label>
+    <p>
+      <input type="checkbox" name="One" value="One"> Balancing life and remote work<br>
+      <input type="checkbox" name="Group" value="Group"> Meditation<br>
+      <input type="checkbox" name="Asian" value="Asian" > Nutrition<br>
+      <input type="checkbox" name="Asian" value="Asian" > COVID restrictions added stress<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Current job market & job search process<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Academic issues<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Testing anxiety<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Video call anxiety<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Politics<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Family<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Friends<br> 
+      <input type="checkbox" name="Asian" value="Asian" > Relationships<br> 
     </p>
   </fieldset>
   <div align="right"> <button> Next </button> </div>
 
+  <div>
+      <a href="results_page.html"><button class="btn">View your results</button></a>
+  </div>
+
 </form>
   </div>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+        
     </body>
 </html>
