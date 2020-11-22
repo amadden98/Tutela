@@ -10,7 +10,10 @@
 	<meta name="keywords" content="Duke, Mental Health">
 	<title>Tutela Chat Bot</title>
 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Roboto&display=swap">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<style>
 		/* variables */
 		:root {
@@ -18,10 +21,9 @@
 			--headers: #1b3b13;
 			--links: #331d21;
 		}
-
 		/* Style page content */
 		body {
-			margin-left: 200px;
+			margin-left: 248px;
 			/* Same as the width of the sidebar + 24*/
 			padding: 24px 10px;
 
@@ -47,7 +49,6 @@
 			color: var(--headers);
 			margin-bottom: 8px;
 		}
-
 		p {
 			margin-top: 0px;
 			max-width: 600px;
@@ -59,12 +60,9 @@
 			color: black;
 		}
 
-		a:hover {
-			color: var(--links);
-		}
+		a:hover { color: var(--links); }
 
-		th,
-		td {
+		th, td {
 			border-bottom: 1px solid #ddd;
 		}
 
@@ -72,7 +70,7 @@
 		.sidenav {
 			height: 100%;
 			/* Full-height: remove this if you want "auto" height */
-			width: 176px;
+			width: 224px;
 			/* Set the width of the sidebar */
 			position: fixed;
 			/* Fixed Sidebar (stay in place on scroll) */
@@ -82,24 +80,23 @@
 			/* Stay at the top */
 			left: 0;
 			background-color: var(--sidebar);
-			/* Nexys A7 Green */
+			/* Sidebar color */
 			overflow-x: hidden;
 			/* Disable horizontal scroll */
 
 			color: #ffffff;
-			font-family: 'Domine';
+			font-family: 'Roboto';
 			font-size: 16px;
 		}
 
 		.sidenav h1 {
 			font-family: 'Domine';
-			padding: 16px 8px 8px 16px;
+			padding: 0px 8px 8px 0px;
 			margin-top: 36px;
 			color: #ffffff;
 		}
 
 		.sidenav a {
-			font-family: 'Roboto';
 			font-weight: normal;
 			padding: 16px 8px 8px 16px;
 			text-decoration: none;
@@ -111,17 +108,27 @@
 			font-weight: bold;
 			color: var(--links);
 		}
+
+		/* Rules for sizing the icon. */
+		.material-icons {
+			vertical-align: middle;
+		}
+		.material-icons.md-18 { font-size: 18px; }
+		.material-icons.md-24 { font-size: 24px; }
+		.material-icons.md-36 { font-size: 36px; }
+		.material-icons.md-48 { font-size: 48px; }
+
 	</style>
 </head>
 
 <body>
 	<div class="sidenav">
-		<h1>Tutela</h1>
-		<a href="find_care.html">Find Care</a>
-		<a href="home.html">Student Testimonials</a>
-		<a href="home.html">Onboarding Information</a>
-		<a href="chatbot.html">Ask Questions</a>
-		<a href="about_us.html">About Us</a>
+		<h1><a href="home.html">Tutela</a></h1>
+		<a href="find_care.html"><i class="material-icons md-18">person_search</i> Find Care</a>
+		<a href="home.html"><i class="material-icons md-18">forum</i> Student Testimonials</a>
+		<a href="home.html"><i class="material-icons md-18">info</i> Onboarding Information</a>
+		<a href="chatbot.html"><i class="material-icons md-18">chat_bubble</i> Ask Questions</a>
+		<a href="about_us.html"><i class="material-icons md-18">groups</i> About Us</a>
 	</div>
 	<div class="title">
 		<h1>Nugget is here to answer any questions!</h1>
@@ -135,8 +142,7 @@
 		});
 	</script>
 
-	<script src="script.js">
-	</script>
+	<script src="script.js"></script>
 </body>
 
 </html>
