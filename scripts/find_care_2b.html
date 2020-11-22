@@ -31,13 +31,13 @@
                 color: #000000;
             }
 
-            h1 {
+            h1, legend {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 24px;
             }
 
-            h2 {
+            h2, label {
                 font-family: 'Domine';
                 color: var(--headers);
                 margin-bottom: 8px;
@@ -142,33 +142,9 @@
                 
             </p>
         </div>
-
-
-    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-    <script>
-        var myLandbot = new LandbotLivechat({index: 'https://chats.landbot.io/v2/H-740792-LH113TP71UW6K1LP/index.html',});
-    </script>
-    <script>
-        // Show a proactive message on landbot load
-        myLandbot.on('landbot-load', function() {
-            myLandbot.sendProactive({
-                "message": "Hey it's Nugget, I'm here to answer any questions you have about Tutela and can recommend some mental health tips!",
-                "author": "Nugget the Chatbot",
-                "avatar": "https://storage.googleapis.com/media.helloumi.com/155883/channels/FPZK6QL2B5O82UYY4HQAJ2FWR45P8HR9.jpg",
-                "extra": {
-                    "hide_textbox": true
-                }
-            });
-        });
-    </script>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<!-- head - Googlefonts link -->
-
 <div id="outside">
-<form id="survey-form" action="/my-handling-form-page" method="post">
+<form id="survey-form" action="results_page.html" method="post">
 
- 
-   
       <!-- ------------------Checkboxes-------------------------------- -->
    <legend>Past experiences</legend>
   <fieldset>
@@ -233,8 +209,5 @@
 
 </form>
   </div>
-
-<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
-        
     </body>
 </html>
