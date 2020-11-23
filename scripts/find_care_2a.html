@@ -107,8 +107,17 @@
                 font-size: 16px;
             }
 
+            .sidenav img {
+                width: 150px;
+                bottom: 0;
+                left: 50%;
+                margin-left: -75px;
+                position: absolute;
+            }
+
             .sidenav h1 {
                 font-family: 'Domine';
+                text-align: center;
                 padding: 0px 8px 8px 0px;
                 margin-top: 36px;
                 color: #ffffff;
@@ -165,6 +174,7 @@
             <a href="home.html"><i class="material-icons md-18">info</i> Onboarding Information</a>
             <a href="chatbot.html"><i class="material-icons md-18">chat_bubble</i> Ask Questions</a>
             <a href="about_us.html"><i class="material-icons md-18">groups</i> About Us</a>
+            <img src="../assets/logo.png">
         </div>
 
         <div class="title">
@@ -179,8 +189,9 @@
                 <div class="question">                  
                     <label for="Gender">Would you prefer a one on one basis, or a group setting?</label>
                     <p>
-                    <input type="checkbox" name="One" value="One"> One on one<br>
-                    <input type="checkbox" name="Group" value="Group"> Group Setting <br>      
+                    <input type="radio" name="One" value="One"> One on one<br>
+                    <input type="radio" name="Group" value="Group"> Group setting<br> 
+                    <input type="radio" name="Group" value="Group"> No preference<br>       
                     </p>
                 </div>
             
@@ -202,14 +213,15 @@
                         <input type="checkbox" name="Group" value="Group"> Duke social media<br>
                         <input type="checkbox" name="Latino_Hispanic" value="Latino_Hispanic"> Suggested by a mental health provider<br>
                         <input type="checkbox" name="Asian" value="Asian"> Online research<br> 
+                        <input type="checkbox" name="Asian" value="Asian"> Other<br> 
                     </p>
                 </div>
             
                 <div class="question">
                     <label for="Gender">Did you purposefully seek out online health resources?</label>
                     <p>
-                        <input type="checkbox" name="One" value="One"> Yes <br>
-                        <input type="checkbox" name="Group" value="Group"> No <br>
+                        <input type="Radio" name="One" value="One"> Yes <br>
+                        <input type="Radio" name="Group" value="Group"> No <br>
                     </p>
                 </div>
             <div align="right"> <button> Next: Previous Experiences</button> </div>
